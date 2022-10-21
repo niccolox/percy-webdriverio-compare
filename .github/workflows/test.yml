@@ -15,9 +15,13 @@ jobs:
           restore-keys: v1/${{ runner.os }}/node-14/
       - name: Install dependencies
         run: npm ci
-      - name: Run tests
+      - name: Run visual:baseline
         uses: percy/exec-action@v0.3.1
         with:
-          custom-command: "npm test"
+          custom-command: "npm visual:baseline"
+      - name: Run visual:comparison
+        uses: percy/exec-action@v0.3.1
+        with:
+          custom-command: "npm visual:comparison"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
