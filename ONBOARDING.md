@@ -2,6 +2,17 @@
 
 The Percy Assignments Demo uses Percy.io Visual Testing framework and platform and Webdriver.io as Test Runner
 
+### Summary
+
+```shell
+npm install
+npm run hello
+npm run visual:baseline
+npm run visual:comparison
+```
+
+### Features
+
 * uses ```npm run visual:baseline``` to buid a Percy visual baseline of Browserstack.com production website
 * uses ```npm run visual:comparison``` to make a Percy visual comparison of Browserstack staging site compared to the baseline of the production site
 * use Percy list view and snapshot view to Review, Approve etc visual changes
@@ -18,14 +29,6 @@ The Percy Assignments Demo uses Percy.io Visual Testing framework and platform a
    
   Before proceeding with that I'll sync with CE team, this may already be done. 
 
-### Summary
-
-```shell
-npm install
-npm run hello
-npm run visual:baseline
-npm run visual:comparison
-```
 
 ## Hello World Webdriver.io Percy
 
