@@ -246,6 +246,11 @@ https://percy.io/3fdc3ca1/percy-webdriverio-compare/builds/22378453/changed/1247
 ![master branch is default base branch](docs/dashboard.png)
 
 
+## CICD
+
+https://github.com/niccolox/percy-webdriverio-compare/blob/main/.github/workflows/test.yml
+https://github.com/niccolox/percy-webdriverio-compare/actions
+
 
 ## Development Ideas
 
@@ -266,3 +271,5 @@ set in config
 * comparison url
 
 thats it?
+
+https://stackoverflow.com/questions/11580961/sending-command-line-arguments-to-npm-script
