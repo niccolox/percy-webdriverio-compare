@@ -24,8 +24,8 @@ npm run visual:comparison
   * refactor to have a single test which accepts arguments
   * npm accepts arguments
   * create a CLI UX which requires no config
-  * DEV GOAL @todo npm run visual:baseline -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com 
-  * DEV GOAL @todo npm run visual:comparison -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com . 
+  * DEV GOAL @todo npm run visual:baseline -baseline_url "https://www.browserstack.com" -comparison_url https://k8.bsstag.com 
+  * DEV GOAL @todo npm run visual:comparison -baseline_url "https://www.browserstack.com" -comparison_url https://k8.bsstag.com . 
    
   Before proceeding with that I'll sync with CE team, this may already be done. 
 
@@ -186,7 +186,7 @@ percy-baseline -baseline https://www.browserstack.com -percy-branch master
 ## Compare 
 
 ```
-npm run compare
+npm run compar
 ```
 
 pattern from docs
