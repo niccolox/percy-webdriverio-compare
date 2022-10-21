@@ -17,8 +17,10 @@ jobs:
         run: npm ci
       - name: npm run hello
         run: npm run hello
-      - name: npm run visual:baseline
-        run: npm run visual:baseline
+      - name: npm run visual:baseline:ci
+        run: npm run visual:baseline:ci
+        env:
+          PERCY_BRANCH: master
       - name: npm run visual:comparison
         run: npm run visual:compariso
       # - name: Run visual:baseline
