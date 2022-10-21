@@ -21,7 +21,7 @@
   },
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "hello": "percy exec -- wdio run wdio.conf.js --spec test hello_world.test.js",
+    "hello": "percy exec -- wdio run wdio.conf.js --spec test/hello_world.test.js",
     "visual:baseline": "PERCY_BRANCH=master percy exec -- wdio run wdio.conf.js --spec test/baseline.test.js",
     "visual:comparison": "PERCY_BRANCH=staging PERCY_TARGET_BRANCH=master percy exec -- wdio run wdio.conf.js --spec test/comparison.test.js",
     "test": "percy exec -- wdio wdio.conf.js",
