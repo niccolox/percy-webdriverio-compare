@@ -6,6 +6,9 @@ The Percy Assignments Demo uses Percy.io Visual Testing framework and platform a
 * uses ```npm run visual:compare``` to make a Percy visual comparison of Browserstack staging site compared to the baseline of the production site
 * use Percy list view and snapshot view to Review, Approve etc visual changes
 * Webdriver.io is used to drive Percy Snapshots, Webdriver.io is the Test Runner, Percy.io is the Visual Testing Automation framework and platform
+
+
+### DEV IDEAS
 * additionally, development ideas are sketched out; 
   * refactor to have a single test which accepts arguments
   * npm accepts arguments
