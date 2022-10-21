@@ -17,19 +17,16 @@ jobs:
         run: npm ci
       - name: npm run hello
         run: npm run hello
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
       - name: npm run visual:baseline:ci
         run: npm run visual:baseline:ci
         env:
           PERCY_BRANCH: master
-      - name: npm run visual:comparison
-        run: npm run visual:compariso
-      # - name: Run visual:baseline
-      #   uses: percy/exec-action@v0.3.1
-      #   with:
-      #     custom-command: "npm run visual:baseline"
-      # - name: Run visual:comparison
-      #   uses: percy/exec-action@v0.3.1
-      #   with:
-      #     custom-command: "npm run visual:comparison"
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - name: npm run visual:comparison:ci
+        run: npm run visual:comparison:ci
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_TARGET_BRANCH: master
+          PERCY_BRANCH: staging                   
