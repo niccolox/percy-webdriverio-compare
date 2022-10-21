@@ -245,3 +245,24 @@ https://percy.io/3fdc3ca1/percy-webdriverio-compare/builds/22378453/changed/1247
 
 ![master branch is default base branch](docs/dashboard.png)
 
+
+
+## Development Ideas
+
+* want a command that allows you to pass arguments of baseline and comparison 
+
+does both
+```npm run visual:baseline
+npm run visual compare
+```
+
+```
+visualizer:baseline -baseline_url "https://www.browserstack.com"
+visualizer:compare -baseline_url "https://www.browserstack.com" -comparison_url "https://k8.bcstag.com"
+```
+
+set in config 
+* baseline url
+* comparison url
+
+thats it?
