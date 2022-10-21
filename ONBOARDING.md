@@ -287,3 +287,10 @@ set in config
 thats it?
 
 https://stackoverflow.com/questions/11580961/sending-command-line-arguments-to-npm-script
+
+### Open Questions
+
+* Is it possible to send messages to Percy to name Snapshots etc?
+* Is Percy UI/UX designed around Git Feature or Topic branching strategies like Gitflow?
+* Is it possible to turn off auto Percy builds? How is that controlled?
+* Can we turn off certain branches from running Percy entirely?
