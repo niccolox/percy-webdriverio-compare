@@ -1,12 +1,20 @@
-## Setup
+## Percy Visual Testing
+
+Demo uses Percy.io Visual Testing platform and Webdriver.io to do the following
+
+* uses ```npm run visual:baseline``` to buid a Percy visual baseline of Browserstack.com production website
+* uses ```npm run visual:compare``` to Percy visual comparison of Browserstack staging site compared to the baseline of the production site
+* Webdriver.io is used to drive Percy Snapshots
+* some ideas on a DSL are sketched out
+
+### Summary
 
 ```shell
-bash ./scripts/local.env.sh
 npm install
-npm test
+npm run hello
+npm run visual:baseline
+npm run visual:compare
 ```
-
-
 
 ## Hello World Webdriver.io Percy
 
@@ -14,6 +22,7 @@ https://docs.percy.io/docs/webdriverio
 
 ```
 export PERCY_TOKEN=
+npm hello
 npx percy exec -- wdio run ./wdio.conf.js --spec test/hello_world.test.js
 ```
 
