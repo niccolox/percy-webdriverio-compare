@@ -1,11 +1,17 @@
 ## Percy Visual Testing
 
-Demo uses Percy.io Visual Testing platform and Webdriver.io to do the following
+The Percy Assignments Demo uses Percy.io Visual Testing framework and platform and Webdriver.io as Test Runner
 
 * uses ```npm run visual:baseline``` to buid a Percy visual baseline of Browserstack.com production website
-* uses ```npm run visual:compare``` to Percy visual comparison of Browserstack staging site compared to the baseline of the production site
-* Webdriver.io is used to drive Percy Snapshots
-* some ideas on a DSL are sketched out
+* uses ```npm run visual:compare``` to make a Percy visual comparison of Browserstack staging site compared to the baseline of the production site
+* use Percy list view and snapshot view to Review, Approve etc visual changes
+* Webdriver.io is used to drive Percy Snapshots, Webdriver.io is the Test Runner, Percy.io is the Visual Testing Automation framework and platform
+* additionally, development ideas are sketched out; 
+  * refactor to have a single test which accepts arguments
+  * npm accepts arguments
+  * create a CLI UX which requires no config
+  * DEV GOAL @todo npm run visual:baseline -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com 
+  * DEV GOAL @todo npm run visual:compare -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com . Before proceeding with that I'll sync with CE team, this may already be done. 
 
 ### Summary
 
