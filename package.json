@@ -21,7 +21,9 @@
   },
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "percy exec --testing -- wdio wdio.conf.js",
+    "baseline": "PERCY_BRANCH=master npx percy exec -- wdio run ./wdio.conf.js --spec test/browserstack.production.test.js",
+    "compare": "PERCY_BRANCH=staging PERCY_TARGET_BRANCH=master npx percy exec -- wdio run ./wdio.conf.js --spec test/browserstack.staging.test.js",
+    "test": "percy exec -- wdio wdio.conf.js",
     "test:coverage": "nyc yarn test",
     "test:types": "tsd"
   },
