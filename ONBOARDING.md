@@ -14,7 +14,9 @@ The Percy Assignments Demo uses Percy.io Visual Testing framework and platform a
   * npm accepts arguments
   * create a CLI UX which requires no config
   * DEV GOAL @todo npm run visual:baseline -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com 
-  * DEV GOAL @todo npm run visual:comparison -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com . Before proceeding with that I'll sync with CE team, this may already be done. 
+  * DEV GOAL @todo npm run visual:comparison -baseline_url "https://www.browserstack.com" -compare_url https://k8.bsstag.com . 
+   
+  Before proceeding with that I'll sync with CE team, this may already be done. 
 
 ### Summary
 
@@ -22,7 +24,7 @@ The Percy Assignments Demo uses Percy.io Visual Testing framework and platform a
 npm install
 npm run hello
 npm run visual:baseline
-npm run visual:compare
+npm run visual:comparison
 ```
 
 ## Hello World Webdriver.io Percy
