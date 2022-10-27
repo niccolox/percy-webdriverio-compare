@@ -12,28 +12,28 @@ describe('Percy Baseline', () => {
     it('snapshot homepage', async () => {
       await browser.url(minimal_constants.BASELINE_URL);
       await browser.maximizeWindow();
-      await browser.pause(1000);
+      await browser.pause(common_constants.PAUSE);
       await percySnapshot(browser, 'Homepage Page', { widths: common_constants.TEST_WIDTHS });
     });
 
     it('snapshot pricing', async () => {
       await browser.url(minimal_constants.BASELINE_URL + '/pricing');
       await browser.maximizeWindow();
-      await browser.pause(1000);
+      await browser.pause(common_constants.PAUSE);
       await percySnapshot(browser, 'Pricing Page', { widths: common_constants.TEST_WIDTHS });
     });
 
     it('snapshot integrations', async () => {
       await browser.url(minimal_constants.BASELINE_URL + '/integrations/automate');
       await browser.maximizeWindow();
-      await browser.pause(1000);
+      await browser.pause(common_constants.PAUSE);
       await percySnapshot(browser, 'Automation Integrations Page', { widths: common_constants.TEST_WIDTHS });
     });
     
     it('snapshot docs', async () => {
       await browser.url(minimal_constants.BASELINE_URL + '/docs');
       await browser.maximizeWindow();
-      await browser.pause(1000);
+      await browser.pause(common_constants.PAUSE);
       await percySnapshot(browser, 'Docs Page', { widths: common_constants.TEST_WIDTHS });
     });   
 
