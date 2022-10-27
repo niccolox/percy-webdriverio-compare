@@ -13,6 +13,10 @@ exports.config = {
     }
   }],
 
+  jasmineOpts: [{
+    timeout: 30000
+  }],
+
   onPrepare() {
     require('geckodriver').start();
   },
