@@ -5,6 +5,7 @@ The Percy Assignments Demo uses Percy.io Visual Testing framework and platform a
 ### Summary
 
 ```shell
+geckodriver -vv
 npm install
 npm run hello
 npm run visual:baseline
@@ -186,7 +187,7 @@ percy-baseline -baseline https://www.browserstack.com -percy-branch master
 ## Compare 
 
 ```
-npm run compar
+npm run comparison
 ```
 
 pattern from docs
@@ -271,7 +272,8 @@ https://github.com/niccolox/percy-webdriverio-compare/actions
 * want a command that allows you to pass arguments of baseline and comparison 
 
 does both
-```npm run visual:baseline
+```
+npm run visual:baseline
 npm run visual compare
 ```
 
